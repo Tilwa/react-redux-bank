@@ -44,7 +44,7 @@ const acountSlice = createSlice({
 
 export const { withdraw, requestLoan, payLoan } = acountSlice.actions;
 
-// Thunk
+// Auto Thunk in redux-toolkit
 export function deposit(amount, currency) {
   if (currency === "USD") {
     // Directly return the deposit action for USD
